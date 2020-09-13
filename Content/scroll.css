@@ -174,14 +174,8 @@ input[type=text],select,textarea{
     border-radius: 0.3em;
 }
 /*------------footer-------------------*/
-#footer a{
-    color: rgb(105, 105, 105);
-}
-#footer a:hover{
-    color: rgb(32, 32, 32);
-}
-#footer .container{
-    font-size: 30%;
-    padding-top: 0.5em;
-    padding-bottom: 1em;
+#footer{
+    font-size: 0.5em;
+    color: rgb(175, 175, 175);
+    text-align: center;
 }
