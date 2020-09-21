@@ -8,6 +8,7 @@ html,body{
 h2{
     text-align: center;
 }
+
 /*----------------背景-------------------*/
 #bg1{
     position: fixed;
@@ -26,7 +27,9 @@ h2{
 #join-img{
     position: fixed;
 }
-
+#up-img{
+    position: fixed;
+}
 /*--------------------header-----------------------*/
 #header{
 	width: 100%;
@@ -80,7 +83,7 @@ hr{
 .item h3{
     width: 100%;
     color: black;
-    background-color: rgba(255, 244, 224, 0.541);
+    background-color: rgba(134, 134, 134, 0.541);
     font-size: 2em;
     margin: 0;
     height: 100%;
