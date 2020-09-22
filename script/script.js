@@ -45,18 +45,19 @@ function ScollPostion() {
     var doc1 = document.getElementById("bg1");
     var doc2 = document.getElementById("bg2");
     //var num = t/document.documentElement.clientHeight;
-    var name = ["kaifa", "zuce", "wailian",
-        "xinxuan", "chuanmei", "kepu",
-        "chuangye", "chuangxin"];
-    var imgs = ["images/img1.jpg", "images/img2.jpg", "images/img3.jpg",
-        "images/img4.jpg", "images/img5.jpg", "images/img6.jpg",
-        "images/img7.jpg", "images/img8.jpg", "images/bg.jpg"];
+    var name = ["kaifa", "zuce", 
+    "wailian","xinxuan", 
+    "kepu","shuangchuang"];
+    var imgs = ["images/img1.jpg", "images/img2.jpg", 
+    "images/img3.jpg","images/img4.jpg", 
+    "images/img5.jpg", "images/img6.jpg",
+    "images/bg.jpg"];
     //console.log(document.getElementById("sign-up").offsetTop-t);
-    for (var i = 0; i < 8; i++) {
+    for (var i = 0; i < 6; i++) {
         if (t > document.getElementById(name[i]).offsetTop) {
             //console.log(document.getElementById(name[1]).offsetTop-t);
             doc1.style.backgroundImage = "URL(" + imgs[i] + ")";
-            if (i < 7) {
+            if (i < 5) {
                 doc1.style.height = document.getElementById(name[i + 1]).offsetTop - t + "px";
                 doc2.style.backgroundImage = "URL(" + imgs[i + 1] + ")";
                 doc2.style.height = document.documentElement.clientHeight + "px";
@@ -64,26 +65,37 @@ function ScollPostion() {
         }
     }
     if (t < document.getElementById(name[0]).offsetTop) {
-        doc1.style.backgroundImage = "URL(" + imgs[8] + ")";
+        doc1.style.backgroundImage = "URL(" + imgs[6] + ")";
         doc1.style.height = document.getElementById(name[0]).offsetTop - t + "px";
         doc2.style.backgroundImage = "URL(" + imgs[0] + ")";
     }
 }
 
 
-//浮动的一个小元素
+//浮动的元素
 function floatpic() {
     var y = document.documentElement.clientHeight;
     var x = document.documentElement.clientWidth;
-    var pic = document.getElementById("join-img");
-    pic.style.marginTop = (4 / 5) * y + "px";
-    pic.style.marginLeft = (x - 200) + "px";
-    console.log(document.body.scrollTop);
+    var pic1 = document.getElementById("join-img");
+    pic1.style.marginTop = (9 / 10) * y + "px";
+    pic1.style.marginLeft = (x - 100) + "px";
+    //console.log(document.body.scrollTop);
     if (((document.getElementById("sign-up").offsetTop - document.body.scrollTop) < y) || ((document.getElementById("sign-up").offsetTop - document.documentElement.scrollTop) < y)) {
-        pic.style.display = "none";
+        pic1.style.display = "none";
     }
     else {
-        pic.style.display = "block";
+        pic1.style.display = "block";
+    }
+
+    var pic2=document.getElementById("up-img");
+    pic2.style.marginTop = (9 / 10) * y -60+"px";
+    pic2.style.marginLeft = (x - 100) + "px";
+    //console.log(document.documentElement.scrollTop);
+    if ((document.body.scrollTop < 50) && (document.documentElement.scrollTop < 50)) {
+        pic2.style.display = "none";
+    }
+    else {
+        pic2.style.display = "block";
     }
 }
 
