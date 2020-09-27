@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="MarsStudio招新宣传页">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<title>校大学生科协招新啦!</title>
+	<link rel="stylesheet" href="Content/pc.css">
+	<link rel="stylesheet" href="Content/font-awesome.min.css">
+	<script type="text/javascript" src="script/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+</head>
+
+<body>
+	
+	<!--
+		<div id="bg1">
+	</div>
+	<div id="bg2">
+	</div>
+		<a href="#sign-up" id="join-img">
+		<img src="images/join_img.jpg">
+	</a>
+	<a href="#header" id="up-img">
+		<img src="images/up_img.jpg">
+	</a>
+	-->
+
+	<div id="header">
+		<div class="container">
+			<h1>校科协招新啦</h1>
+			<a href="#hr1">开始了解</a>
+		</div>
+	</div>
+	<hr id="hr1">
+	<h2 class="title">六大部门</h2>
+	<script>
+		$(document).ready(function(){
+			var name=["#kaifa","#zuce","#wailian","#xinxuan","#kepu","#shuangchuang"];
+			for(var i=0;i<name.length;i++){
+				$(name[i]+" p").hide();
+			}
+/*
+for(var i=0;i<name.length;i++){
+				$(name[i]).mouseover(function(){
+				$(name[i]+" h3").hide();
+				$(name[i]+" p").fadeIn();
+				});
+			}
+*/
+			
+
+			$("#zuce").mouseover(function(){
+			$("#zuce h3").hide();
+			$("#zuce p").fadeIn();
+		  });
+		  	$("#kaifa").mouseover(function(){
+			$("#kaifa h3").hide();
+			$("#kaifa p").fadeIn();
+		  });
+		  $("#xinxuan").mouseover(function(){
+			$("#xinxuan h3").hide();
+			$("#xinxuan p").fadeIn();
+		  });
+		  $("#wailian").mouseover(function(){
+			$("#wailian h3").hide();
+			$("#wailian p").fadeIn();
+		  });
+		  $("#kepu").mouseover(function(){
+			$("#kepu h3").hide();
+			$("#kepu p").fadeIn();
+		  });
+		  $("#shuangchuang").mouseover(function(){
+			$("#shuangchuang h3").hide();
+			$("#shuangchuang p").fadeIn();
+		  });
+
+		  $("#zuce").mouseleave(function(){
+			$("#zuce h3").fadeIn();
+			$("#zuce p").hide();
+		  });
+		  	$("#kaifa").mouseleave(function(){
+			$("#kaifa h3").fadeIn();
+			$("#kaifa p").hide();
+		  });
+		  $("#xinxuan").mouseleave(function(){
+			$("#xinxuan h3").fadeIn();
+			$("#xinxuan p").hide();
+		  });
+		  $("#wailian").mouseleave(function(){
+			$("#wailian h3").fadeIn();
+			$("#wailian p").hide();
+		  });
+		  $("#kepu").mouseleave(function(){
+			$("#kepu h3").fadeIn();
+			$("#kepu p").hide();
+		  });
+		  $("#shuangchuang").mouseleave(function(){
+			$("#shuangchuang h3").fadeIn();
+			$("#shuangchuang p").hide();
+		  });
+		});
+	</script>
+	<div id="introduce">
+		<table id="introduce-table">
+			<tr>
+				<td class="item" id="kaifa">
+					<div>
+						<h3>技术开发部</h3>
+						<p class="paragraph">
+							&ensp;&ensp;&ensp;&ensp;技术开发部负责研究制作各种有趣的项目，如航模，多轴飞行器电子制作等，涵盖&ensp;arduino,&ensp;stm32,&ensp;51,&ensp;arm&ensp;等平台。部门由电子，设计，网页制作，航模航拍，静态模型制作，电脑维修等多个方向组成。有多台航模，多轴飞行器和充足的工具耗材。
+						</p>
+					</div>
+				</td>
+				<td class="item" id="zuce">
+					<div>
+						<h3>组织策划部</h3>
+						<p class="paragraph">
+							&ensp;&ensp;&ensp;&ensp;组织策划部是校大学生科协主席团执行机构，负责协调各部门工作，处理大学生科协内部行政事务，组织策划部在主席团与各部门之间架起桥梁，成为各部门联系的纽带。
+						</p>
+					</div>
+				</td>
+				<td class="item" id="wailian">
+					<div>
+						<h3>对外联络部</h3>
+						<p class="paragraph">
+							&ensp;&ensp;&ensp;&ensp;对外联络部--传说中的百变部门，对外与各大高校交际交流，对内与24个院及学生组织互通有无，同时迈入社会与各企业单位合作。科协活动中的礼仪担当与机动队担当。
+						</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="item" id="xinxuan">
+					<div>
+						<h3>新闻宣传部</h3>
+						<p class="paragraph">
+							&ensp;&ensp;&ensp;&ensp;校大学生科协的宣传部门，是科协的先锋队、宣传的主力军。主要负责活动前期的宣传，海报、宣传单的制作，活动中照片的拍摄，新闻稿的撰写，以及活动后期的照片处理，QQ、微信等新媒体平台的运营，发布科普知识和普及科技。
+						</p>
+					</div>
+				</td>
+				<td class="item" id="kepu">
+					<div>
+						<h3>科普活动部</h3>
+						<p class="paragraph">
+							&ensp;&ensp;&ensp;&ensp;科普活动部以科普为主旨，以活动为载体，将科学理论，科学知识用更加浅显易懂的语言展示给更多同学，给同学们解答疑惑，激发同学们对科学科技的兴趣。
+						</p>
+					</div>
+				</td>
+				<td class="item" id="shuangchuang">
+					<div>
+						<h3>双创联合服务部</h3>
+						<p class="paragraph">
+							&ensp;&ensp;&ensp;&ensp;“双创”，即创新与创业。负责组织，承办，协助多种创新创业类赛事，为参赛队员提供赛前，赛后全方位的指导。我们有丰富多彩的活动，包括每年一届的“天极杯”航模制作大赛，“新世纪小学”合作的航模创意制作第二课堂等。我们还承办包括创新杯创业策划大赛、创业知识竞赛等创业类比赛，协办“本科生科技论坛”，“火花杯”，“创青春”等校级国家级创新类赛事。
+						</p>
+					</div>
+				</td>
+
+			</tr>
+		</table>
+	</div>
+
+	<div class="bellow-button">
+		<div class="container">
+			<h3 class="title">看了以上部门介绍<br>你心动了吗<br><a href="#sign-up">加入我们</a>
+			</h3>
+			<hr class="line">
+			<p>> 懂网络知识&nbsp;or&nbsp;有编程基础，会单片机</p>
+			<p>> 喜欢航模&nbsp;or&nbsp;静模</p>
+			<p>> 即便你啥也不会...如果合得来，我们会带你</p>
+		</div>
+	</div>
+	<div id="sign-up">
+		<h3>报名表</h3>
+		<form name="form">
+			<table id="table1">
+				<tr>
+					<td class="lab"><label for="name">姓名:</label></td>
+					<td><input type="text" id="name" name="name"></td>
+					<td class="lab"><label for="major">专业:</label></td>
+					<td><input type="text" id="major" name="major"></td>
+				</tr>
+				<tr>
+					<td class="lab"><label for="place">籍贯:</label></td>
+					<td><input type="text" id="place" name="place"></td>
+					<td colspan="2">
+						<table id="table2">
+							<tr>
+								<td class="lab"><label for="grade">年级:</label></td>
+								<td>
+									<select name="grade" id="grade">
+										<option value="grade-one">大一</option>
+										<option value="grade-two">大二</option>
+									</select>
+								</td>
+								<td class="lab"><label for="sex">性别:</label></td>
+								<td>
+									<select name="sex" id="sex">
+										<option value="male">男</option>
+										<option value="female">女</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td class="lab"><label for="phone">电话:</label></td>
+					<td><input type="text" id="phone" name="phone"></td>
+					<td class="lab"><label for="first-wish">第一志愿:</label></td>
+					<td>
+						<select name="first-wish" id="first-wish" onchange="hiddenElement()">
+							<option></option>
+							<option value="kaiFa">技术开发部</option>
+							<option value="zuCe">组织策划部</option>
+							<option value="waiLian">对外联络部</option>
+							<option value="xinXuan">新闻宣传部</option>
+							<option value="kePu">科普活动部</option>
+							<option value="shuangchuang">双创联合服务部</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="lab"><label for="sid">学号:</label></td>
+					<td><input type="text" id="sid" name="sid"></td>
+					<td class="lab"><label for="second-wish">第二志愿:</label></td>
+					<td>
+						<select name="second-wish" id="second-wish" onchange="hiddenElement()">
+							<option></option>
+							<option value="kaiFa">技术开发部</option>
+							<option value="zuCe">组织策划部</option>
+							<option value="waiLian">对外联络部</option>
+							<option value="xinXuan">新闻宣传部</option>
+							<option value="kePu">科普活动部</option>
+							<option value="shuangchuang">双创联合服务部</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" id="kaifaTd1"></td>
+				</tr>
+				<tr>
+					<td colspan="4" class="textarea-lab"><label for="myself">自我介绍:</label></td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<textarea rows="8" cols="60" name="myself" id="myself"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" class="textarea-lab"><label for="hope">学习,工作设想:</label></td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<textarea rows="8" cols="60" name="hope" id="hope"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" class="textarea-lab"><label for="hobbies">兴趣爱好:</label></td>
+				<tr>
+					<td colspan="4">
+						<textarea rows="8" cols="60" name="hobbies" id="hobbies"></textarea>
+					</td>
+				</tr>
+			</table>
+			<input type="submit" id="submit" value="提交" onclick="check()">
+		</form>
+	</div>
+	<div id="footer">
+		<p>苏ICP备19048723号</p>
+	</div>
+	
+</body>
+
+</html>

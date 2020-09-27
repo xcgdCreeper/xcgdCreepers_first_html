@@ -1,3 +1,7 @@
+function changePic(){
+    ($("#kaifa h3").fadeOut());
+}
+
 //检验表单填写是不是正确的
 function check() {
     var item = ["name", "place", "phone", "sid",
