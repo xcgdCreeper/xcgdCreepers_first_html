@@ -7,6 +7,7 @@ html,body{
 }
 
 #header{
+    font-size: xx-large;
 	width: 100%;
     height: 100%;
 	background: url('../images/bg.jpg') no-repeat center;
@@ -28,6 +29,19 @@ html,body{
 #header h3{
     margin-top: 0;
     font-size: 1em;
+}
+#header a{
+    color: black;
+}
+#header a:hover{
+    color: rgb(255, 255, 255);
+}
+#header a:visited{
+    color: black;
+}
+/*------------title---------------*/
+#title{
+    text-align: center;
 }
 /*-----------部门介绍--------------*/
 .paragraph{
@@ -98,6 +112,7 @@ html,body{
     margin-bottom: 0.5em;
 }
 #sign-up{
+    
     border-color: rgb(29, 29, 29);
     border-radius: 0.5em;
     margin: 0.5em;
@@ -125,14 +140,7 @@ input[type=text],select,textarea{
     border-radius: 0.3em;
 }
 /*------------footer-------------------*/
-#footer a{
+#footer{
     color: rgb(105, 105, 105);
-}
-#footer a:hover{
-    color: rgb(32, 32, 32);
-}
-#footer .container{
-    font-size: 30%;
-    padding-top: 0.5em;
-    padding-bottom: 1em;
+    font-size: x-small;
 }
