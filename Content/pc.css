@@ -31,13 +31,13 @@ html,body{
     font-size: 1em;
 }
 #header a{
-    color: black;
+    color: rgb(34, 34, 34);
 }
 #header a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(131, 131, 131);
 }
 #header a:visited{
-    color: black;
+    color: rgb(34, 34, 34);
 }
 /*------------title---------------*/
 #title{
@@ -85,9 +85,10 @@ html,body{
 }
 /*---------bellow-button-------------*/
 .bellow-button{
+    height: 50%;
     color: white;
     text-align: center;
-    background: url('../images/callout.jpg') center no-repeat;
+    background: url('../images/callout.jpg') center repeat;
     padding: 60px;
 }
 .bellow-button a{

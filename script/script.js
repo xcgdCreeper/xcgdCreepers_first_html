@@ -114,6 +114,7 @@ function hiddenElement() {
     //label[1] = document.createElement("label");
     var select = [];
     select[0] = document.createElement("select");
+    select[0].name = "select"; 
     //select[1] = document.createElement("select");
 
     var Value = ["ruanjian", "yingjian", "weixiu", "jingmo", "hangmo"];
@@ -171,7 +172,7 @@ function Display(){
     var item=document.getElementsByClassName("item");
     //console.log(item.length);
     for(var name in item){
-        console.log(name  );
+        console.log(name);
 //        var namec=[name.id+" h3",name.id+" p"];
 //        name.addEventListener("mouseover",fun);
 //        function fun(){
