@@ -169,15 +169,17 @@ function hiddenElement() {
 }
 
 function Display(){
-    var item=document.getElementsByClassName("item");
+    
+}
+
+    //var item=document.getElementsByClassName("item");
     //console.log(item.length);
-    for(var name in item){
-        console.log(name);
+    //for(var name in item){
+    //    console.log(name);
 //        var namec=[name.id+" h3",name.id+" p"];
 //        name.addEventListener("mouseover",fun);
 //        function fun(){
 //            $(name.id+" h3").hide();
 //			$(name.id+" p").fadeIn();
 //        }
-    }
-};
+//    }

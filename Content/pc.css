@@ -40,8 +40,12 @@ html,body{
     color: rgb(34, 34, 34);
 }
 /*------------title---------------*/
-#title{
+#title h2{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0px;
     text-align: center;
+    background-color: #bebebe;
 }
 /*-----------部门介绍--------------*/
 .paragraph{
