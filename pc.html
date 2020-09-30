@@ -24,21 +24,18 @@
 		<h2 class="title">六大部门介绍</h2>
 	</div>
 	<script>
-		$(document).ready(function(){
+/*
+$(document).ready(function(){
 			var name=["#kaifa","#zuce","#wailian","#xinxuan","#kepu","#shuangchuang"];
 			for(var i=0;i<name.length;i++){
 				$(name[i]+" p").hide();
 			}
-/*
 for(var i=0;i<name.length;i++){
 				$(name[i]).mouseover(function(){
 				$(name[i]+" h3").hide();
 				$(name[i]+" p").fadeIn();
 				});
 			}
-*/
-			
-
 			$("#zuce").mouseover(function(){
 			$("#zuce h3").hide();
 			$("#zuce p").fadeIn();
@@ -89,8 +86,9 @@ for(var i=0;i<name.length;i++){
 			$("#shuangchuang p").hide();
 		  });
 		});
+*/
 	</script>
-	<div id="introduce">
+	<div id="introduce" onmousemove="Display()">
 		<table id="introduce-table">
 			<tr>
 				<td class="item" id="kaifa">
