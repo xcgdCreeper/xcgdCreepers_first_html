@@ -52,10 +52,10 @@ function ScollPostion() {
     var name = ["kaifa", "zuce", 
     "wailian","xinxuan", 
     "kepu","shuangchuang"];
-    var imgs = ["images/img1.jpg", "images/img2.jpg", 
-    "images/img3.jpg","images/img4.jpg", 
-    "images/img5.jpg", "images/img6.jpg",
-    "images/bg.jpg"];
+    var imgs = ["http://qhqim4ma9.hn-bkt.clouddn.com/img1.jpg", "http://qhqim4ma9.hn-bkt.clouddn.com/img2.jpg", 
+    "http://qhqim4ma9.hn-bkt.clouddn.com/img3.jpg","http://qhqim4ma9.hn-bkt.clouddn.com/img4.jpg", 
+    "http://qhqim4ma9.hn-bkt.clouddn.com/img5.jpg", "http://qhqim4ma9.hn-bkt.clouddn.com/img6.jpg",
+    "http://qhqim4ma9.hn-bkt.clouddn.com/bg.jpg"];
     //console.log(document.getElementById("sign-up").offsetTop-t);
     for (var i = 0; i < 6; i++) {
         if (t > document.getElementById(name[i]).offsetTop) {
