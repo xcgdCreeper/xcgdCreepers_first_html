@@ -4,10 +4,10 @@ function changePic(){
 
 //检验表单填写是不是正确的
 function check() {
-    var item = ["name", "place", "phone", "sid",
+    var item = ["name", "phone", "sid",
         "major", "grade", "sex", "first-wish",
         "second-wish", "myself", "hope", "hobbies"];
-    for (var i = 0; i < 12; i++) {
+    for (var i = 0; i < 11; i++) {
         if (document.forms["form"][item[i]].value == "") {
             alert("请完成报名表");
             return false;
@@ -81,8 +81,8 @@ function floatpic() {
     var y = document.documentElement.clientHeight;
     var x = document.documentElement.clientWidth;
     var pic1 = document.getElementById("join-img");
-    pic1.style.marginTop = (9 / 10) * y + "px";
-    pic1.style.marginLeft = (x - 100) + "px";
+    pic1.style.marginTop = (9 / 10) * y -20+ "px";
+    pic1.style.marginLeft = (x - 60) + "px";
     //console.log(document.body.scrollTop);
     if (((document.getElementById("sign-up").offsetTop - document.body.scrollTop) < y) || ((document.getElementById("sign-up").offsetTop - document.documentElement.scrollTop) < y)) {
         pic1.style.display = "none";
@@ -93,7 +93,7 @@ function floatpic() {
 
     var pic2=document.getElementById("up-img");
     pic2.style.marginTop = (9 / 10) * y -60+"px";
-    pic2.style.marginLeft = (x - 100) + "px";
+    pic2.style.marginLeft = (x - 50) + "px";
     //console.log(document.documentElement.scrollTop);
     if ((document.body.scrollTop < 50) && (document.documentElement.scrollTop < 50)) {
         pic2.style.display = "none";
@@ -167,19 +167,3 @@ function hiddenElement() {
         }
     }
 }
-
-function Display(){
-    
-}
-
-    //var item=document.getElementsByClassName("item");
-    //console.log(item.length);
-    //for(var name in item){
-    //    console.log(name);
-//        var namec=[name.id+" h3",name.id+" p"];
-//        name.addEventListener("mouseover",fun);
-//        function fun(){
-//            $(name.id+" h3").hide();
-//			$(name.id+" p").fadeIn();
-//        }
-//    }
