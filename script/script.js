@@ -1,4 +1,4 @@
-function changePic(){
+function changePic() {
     ($("#kaifa h3").fadeOut());
 }
 
@@ -49,13 +49,13 @@ function ScollPostion() {
     var doc1 = document.getElementById("bg1");
     var doc2 = document.getElementById("bg2");
     //var num = t/document.documentElement.clientHeight;
-    var name = ["kaifa", "zuce", 
-    "wailian","xinxuan", 
-    "kepu","shuangchuang"];
-    var imgs = ["http://qhqim4ma9.hn-bkt.clouddn.com/img1.jpg", "http://qhqim4ma9.hn-bkt.clouddn.com/img2.jpg", 
-    "http://qhqim4ma9.hn-bkt.clouddn.com/img3.jpg","http://qhqim4ma9.hn-bkt.clouddn.com/img4.jpg", 
-    "http://qhqim4ma9.hn-bkt.clouddn.com/img5.jpg", "http://qhqim4ma9.hn-bkt.clouddn.com/img6.jpg",
-    "http://qhqim4ma9.hn-bkt.clouddn.com/bg.jpg"];
+    var name = ["kaifa", "zuce",
+        "wailian", "xinxuan",
+        "kepu", "shuangchuang"];
+    var imgs = ["http://qhqim4ma9.hn-bkt.clouddn.com/img1.jpg", "http://qhqim4ma9.hn-bkt.clouddn.com/img2.jpg",
+        "http://qhqim4ma9.hn-bkt.clouddn.com/img3.jpg", "http://qhqim4ma9.hn-bkt.clouddn.com/img4.jpg",
+        "http://qhqim4ma9.hn-bkt.clouddn.com/img5.jpg", "http://qhqim4ma9.hn-bkt.clouddn.com/img6.jpg",
+        "http://qhqim4ma9.hn-bkt.clouddn.com/bg.jpg"];
     //console.log(document.getElementById("sign-up").offsetTop-t);
     for (var i = 0; i < 6; i++) {
         if (t > document.getElementById(name[i]).offsetTop) {
@@ -81,8 +81,8 @@ function floatpic() {
     var y = document.documentElement.clientHeight;
     var x = document.documentElement.clientWidth;
     var pic1 = document.getElementById("join-img");
-    pic1.style.marginTop = (9 / 10) * y -20+ "px";
-    pic1.style.marginLeft = (x - 60) + "px";
+    pic1.style.marginTop = (9 / 10) * y - 10 + "px";
+    pic1.style.marginLeft = (x - 50) + "px";
     //console.log(document.body.scrollTop);
     if (((document.getElementById("sign-up").offsetTop - document.body.scrollTop) < y) || ((document.getElementById("sign-up").offsetTop - document.documentElement.scrollTop) < y)) {
         pic1.style.display = "none";
@@ -91,8 +91,8 @@ function floatpic() {
         pic1.style.display = "block";
     }
 
-    var pic2=document.getElementById("up-img");
-    pic2.style.marginTop = (9 / 10) * y -60+"px";
+    var pic2 = document.getElementById("up-img");
+    pic2.style.marginTop = (9 / 10) * y - 60 + "px";
     pic2.style.marginLeft = (x - 50) + "px";
     //console.log(document.documentElement.scrollTop);
     if ((document.body.scrollTop < 50) && (document.documentElement.scrollTop < 50)) {
@@ -114,7 +114,7 @@ function hiddenElement() {
     //label[1] = document.createElement("label");
     var select = [];
     select[0] = document.createElement("select");
-    select[0].name = "select"; 
+    select[0].name = "select";
     //select[1] = document.createElement("select");
 
     var Value = ["ruanjian", "yingjian", "weixiu", "jingmo", "hangmo"];
